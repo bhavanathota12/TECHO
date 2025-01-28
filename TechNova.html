@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>TechNova Innovations</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+        }
+
+        header {
+            background: #0056D2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #003C9E;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 86, 210, 0.8), rgba(0, 86, 210, 0.8)), url('https://via.placeholder.com/1920x600');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+
+        .hero button {
+            background: #FFD700;
+            color: #0056D2;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            background: #FFC107;
+        }
+
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .service-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .service-card img {
+            width: 200px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            font-size: 1.2rem;
+            margin: 15px 0;
+        }
+
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background: #0056D2;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background: #003C9E;
+        }
+
+        footer {
+            display:flex;
+            background: #003C9E;
+            flex-direction: row;
+            justify-content:space-between;
+            align-items:center;
+            color: #fff;
+            padding: 15px 20px;
+            font-size:18px;
+        }
+         .social-links i{
+            text-decoration:none;
+          color:#fff;
+          background:#003c9e;;
+          padding:10px;
+          border-radius:50%;
+           margin: 10px;
+          cursor:pointer;
+}
+
+.footer.social-links i:hover{
+    background:#003c9E;
+}
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        TechNova Innovations
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Innovating the Future of Technology</h1>
+        <p>Transforming ideas into reality with cutting-edge solutions</p>
+        <button>Learn More</button>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service-card">
+                <img src="WebDevelopment.jpg" alt="Web Development">
+                <h3>Web Development</h3>
+                <p>Modern and scalable website creation.</p>
+            </div>
+            <div class="service-card">
+                <img src="CloudSolutions.webp" alt="Cloud Solutions">
+                <h3>Cloud Solutions</h3>
+                <p>Reliable cloud infrastructure management.</p>
+            </div>
+            <div class="service-card">
+                <img src="AIML.webp" alt="AI/ML Services">
+                <h3>AI/ML Services</h3>
+                <p>Data-driven decision-making powered by AI.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="section" id="about">
+        <h2>About Us</h2>
+        <p>Technova Innovations is a tech venture that focuses on developing technological skills through training, 
+            collaboration, and services. Technova Imaging Systems is a company that supplies print 
+            solutions and innovative products for a variety of industries. 
+        </p>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="section" id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        &copy; 2025 TechNova Innovations. All rights reserved.
+        <div>Company</div>
+    <div>Disclaimer</div>
+    <div class="social-links">
+        <div>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+    </div>              
+
+    </footer>
+</body>
+</html>
